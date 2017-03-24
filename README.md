@@ -38,35 +38,49 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Route map
-Route-Index->
-app/models/questions.js->
-app/routes/index.js->
-app/templates/index.hbs->
-app/components/question-tile.js->
-app/templates/components/question-tile.hbs->
-app/components/question-details.js->
-app/templates/components/question-details.hbs->
-app/components/new-question.js->
-app/templates/components/new-question.hbs->
-app/components/update-question.js->
-app/templates/components/update-question.hbs->
-app/templates/components/delete-question.hbs
+## Planning
 
-Route-Answers->
-model-questions->
-app/models/answers.js->
-app/routes/index.js->
-app/templates/index.hbs->
-app/components/question-details.js->
-app/templates/components/question-details.hbs->
-app/components/new-answer.js->
-app/templates/components/new-answer.hbs->
-app/components/answer-details.js->
-app/templates/components/answer-details.hbs->
-app/components/update-answer.js->
-app/templates/components/update-answer.hbs->
-app/templates/components/delete-answer.hbs
+### Route map
+* Route-Index->
+* app/models/questions.js->
+* app/routes/index.js->
+* app/templates/index.hbs->
+* app/components/question-tile.js->
+* app/templates/components/question-tile.hbs->
+* app/components/question-details.js->
+* app/templates/components/question-details.hbs->
+* app/components/new-question.js->
+* app/templates/components/new-question.hbs->
+* app/components/update-question.js->
+* app/templates/components/update-question.hbs->
+* app/templates/components/delete-question.hbs
+
+* Route-Answers->
+* model-questions->
+* app/models/answers.js->
+* app/routes/index.js->
+* app/templates/index.hbs->
+* app/components/question-details.js->
+* app/templates/components/question-details.hbs->
+* app/components/new-answer.js->
+* app/templates/components/new-answer.hbs->
+* app/components/answer-details.js->
+* app/templates/components/answer-details.hbs->
+* app/components/update-answer.js->
+* app/templates/components/update-answer.hbs->
+* app/templates/components/delete-answer.hbs
+
+
+### Specs
+
+|     Spec     |     Input     |     Output     |
+| ------------ | ------------- | -------------- |
+|User enters question in form |Author: Bob smith, Question "Why is the sky blue"| List of questions displays on homepage|
+|user clicks on question for more information|Question "Why is the sky blue"| user is taken to new page with question, author, date, and notes about question|
+|user deletes question|question is deleted from database and from list on main page| question ""|
+|user updates question|author: Bob Smith|Author" Tom Jones|
+|option for other users to answer questions on question page|question: "Why is the sky blue?"| Answer: "Because its better than green"|
+|users can delete answers|Answer: "Because its better than green"|Answer: ""|
 
 
 
@@ -78,3 +92,5 @@ app/templates/components/delete-answer.hbs
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+Copyright (c) 201 Sarah Leahy All Rights Reserved.
