@@ -1,1 +1,7 @@
-<h1>Ask anything!</h1>
+<h1>Questions</h1>
+
+<ul>
+{{#each model as |question|}}
+  {{question-tile question=question}}
+{{/each}}
+</ul>
