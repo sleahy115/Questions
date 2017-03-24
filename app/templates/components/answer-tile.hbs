@@ -1,6 +1,5 @@
+<h2>Answers</h2>
 <h4>{{answer.author}}</h4>
 <p>{{answer.body}}</p>
 
-<!-- {{#each model.answers as |answer|}}
-  {{answer-tile answer=answer}}
-{{/each}} -->
+<button {{action 'delete' answer}}>Delete this answer</button>
