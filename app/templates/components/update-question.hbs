@@ -1,4 +1,4 @@
-{{#if addNewQuestion}}
+{{#if updateQuestionForm}}
 <div class="container">
   <form>
     <div class="form-group">
@@ -17,9 +17,9 @@
       <label for="notes">Notes</label>
       {{textarea rows="3" cols="50" value=notes id="notes"}}
     </div>
-    <button {{action 'saveQuestion'}}>Save</button>
+    <button {{action 'update' question}}>Save changes</button>
   </form>
 </div>
 {{else}}
-<button {{action 'questionFormShow'}}> New Question</button>
+<button {{action 'updateQuestionForm'}}>Update this question</button>
 {{/if}}
