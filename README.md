@@ -1,7 +1,6 @@
-# Questions
+# Questions and answers
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A question and answer forum that allows users to post questions and receive answers from other users. A list of questions and answers are available for users to see.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/sleahy115/Questions.git` this repository
 * `cd questions`
 * `npm install`
 * `bower install`
@@ -39,9 +38,38 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Route map
+Route-Index->
+app/models/questions.js->
+app/routes/index.js->
+app/templates/index.hbs->
+app/components/question-tile.js->
+app/templates/components/question-tile.hbs->
+app/components/question-details.js->
+app/templates/components/question-details.hbs->
+app/components/new-question.js->
+app/templates/components/new-question.hbs->
+app/components/update-question.js->
+app/templates/components/update-question.hbs->
+app/templates/components/delete-question.hbs
 
-Specify what it takes to deploy your app.
+Route-Answers->
+model-questions->
+app/models/answers.js->
+app/routes/index.js->
+app/templates/index.hbs->
+app/components/question-details.js->
+app/templates/components/question-details.hbs->
+app/components/new-answer.js->
+app/templates/components/new-answer.hbs->
+app/components/answer-details.js->
+app/templates/components/answer-details.hbs->
+app/components/update-answer.js->
+app/templates/components/update-answer.hbs->
+app/templates/components/delete-answer.hbs
+
+
+
 
 ## Further Reading / Useful Links
 
@@ -50,4 +78,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

@@ -1,0 +1,12 @@
+{ "questions": [{
+  "author": "Bob Smith",
+  "question": "Why is the sky blue?",
+  "date": "03-21-2017",
+  "notes": "Not that I am complaining!"
+}, {
+  "author": "Sandra Thomas",
+  "question": "How tall is Everest?",
+  "date": "03-22-2017",
+  "notes": "Thinking of climbing it?!"
+}]
+}

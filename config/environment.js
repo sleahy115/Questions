@@ -16,6 +16,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    apiKey: "AIzaSyDkuP3gnOPM4TzbFHj24WD2AqmEbWcAS6E",
+    authDomain: "ask-anything-8de03.firebaseapp.com",
+    databaseURL: "https://ask-anything-8de03.firebaseio.com",
+    storageBucket: "ask-anything-8de03.appspot.com",
 
     APP: {
       // Here you can pass flags/options to your application instance
