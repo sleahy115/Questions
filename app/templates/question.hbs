@@ -1,8 +1,7 @@
 <div class="well">
   <h1>{{model.body}}</h1>
-  <h3>{{model.author}}</h3>
+  <h3>By: {{model.author}}</h3>
 
-  <!-- {{update-question question=model update="update"}} -->
   {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
   {{new-answer saveAnswer="saveAnswer" question=model}}
 

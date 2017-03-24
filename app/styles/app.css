@@ -7,11 +7,13 @@ body {
   color: white;
   font-family: 'Russo One', sans-serif;
   text-align: center;
+  text-shadow: black 2px 2px;
 }
 
 button {
   background-color: rgba(230,195,0,0.8);
   color: white;
+  font-size: 15px;
 }
 
 .well {
@@ -36,4 +38,20 @@ textarea {
 }
 footer {
   color: white;
+  font-family: fantasy;
+  font-size: 30px;
+  text-shadow: black 2px 2px;
+}
+header {
+  color: white;
+  font-family: fantasy;
+  font-size: 30px;
+}
+.navbar {
+  background-color: rgba(115,28,28,0.8);
+  color: white;
+  border: rgba(115,28,28,0.8);
+  font-family: fantasy;
+  font-size: 30px;
+  text-shadow: black 2px 2px;
 }
