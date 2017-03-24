@@ -1,10 +1,4 @@
 <h3>{{question.date}}</h3>
 <p>{{question.notes}}</p>
 
-<ul>
-  {{#each question.answers as |answer|}}
-  {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
-
 <button {{action 'delete' question}}>Delete this question</button>
