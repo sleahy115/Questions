@@ -1,0 +1,39 @@
+body {
+  background: url('https://sarahlulabella.files.wordpress.com/2014/11/knight_on_white_horse.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.jumbotron {
+  background-color: rgba(115,28,28,0.8);
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+button {
+  background-color: rgba(230,195,0,0.8);
+  color: white;
+}
+
+.well {
+  background-color: rgba(115,28,28,0.8);
+  color: white;
+  border: rgba(115,28,28,0.8);
+  font-family: fantasy;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+input{
+  color: red;
+}
+textarea {
+  color: red;
+}
+footer {
+  color: white;
+}

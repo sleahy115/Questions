@@ -1,10 +1,12 @@
-<h1>{{model.body}}</h1>
-<h3>{{model.author}}</h3>
+<div class="well">
+  <h1>{{model.body}}</h1>
+  <h3>{{model.author}}</h3>
 
-{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-{{update-question question=model update="update"}}
-{{new-answer saveAnswer="saveAnswer" question=model}}
+  <!-- {{update-question question=model update="update"}} -->
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 
-{{#each question.answers as |answer|}}
-  {{answer-tile answer=answer}}
-{{/each}}
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</div>

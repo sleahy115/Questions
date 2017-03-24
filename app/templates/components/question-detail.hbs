@@ -1,8 +1,11 @@
-<h3>{{question.date}}</h3>
-<p>{{question.notes}}</p>
+<div class="well">
+  <h3>{{question.date}}</h3>
+  <p>{{question.notes}}</p>
 
-<button {{action 'delete' question}}>Delete this question</button>
+  <button {{action 'delete' question}}>Delete this question</button>
+  {{update-question question=model update="update"}}
 
-{{#each question.answers as |answer|}}
-  {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
-{{/each}}
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</div>
