@@ -1,11 +1,8 @@
 <div class="well">
+  <button {{action 'delete' question}}>Delete this question</button>
   <h3>Date: {{question.date}}</h3>
   <h3>Notes: {{question.notes}}</h3>
 
-  <button {{action 'delete' question}}>Delete this question</button>
-  <br>
-  <br>
-  {{update-question question=model update="update"}}
 
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
